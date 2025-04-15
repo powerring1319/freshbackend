@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: freshlance-scraper
+    runtime: docker
+    env: python
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: PYTHONUNBUFFERED
+        value: 1
